@@ -52,7 +52,7 @@ while vs.isOpened() :
         circles = np.round(circles[0, :]).astype("int")
 
         for (xCenter, yCenter, radius) in circles :
-            cv2.circle(frameCircle, (xCenter, yCenter), radius, Ccolor, Cthickness)                                                                          # Make the circles
+            cv2.circle(frameCircle, (xCenter, yCenter), radius, Ccolor, Cthickness)                                                                         # Make the circles
 
     frame = cv2.putText(frame, "FPS : " + str(int(fps)), position, font, 1, FPScolor, FPSthickness, cv2.LINE_AA)                                            # Display fps
 
